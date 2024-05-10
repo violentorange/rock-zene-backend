@@ -1,0 +1,266 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "rock_zenek",
+    "collectionId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+    "dateExported": "2024-05-10T20:29:52.743Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Songs",
+            "containerId": "",
+            "created": "2024-05-10T13:32:55.479Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Artists",
+            "containerId": "",
+            "created": "2024-05-10T13:33:06.367Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ae993392-0283-4b8e-83de-53cb1b7b5bcf",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Get all",
+            "url": "http://127.0.0.1:8000/api/songs",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-09T11:34:54.017Z",
+            "modified": "2024-05-09T12:42:58.475Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "0afeb6d6-f9ca-4b93-9037-275b23f9d450",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Get all",
+            "url": "http://127.0.0.1:8000/api/artists",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-10T13:33:11.863Z",
+            "modified": "2024-05-10T13:33:24.989Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "2821e266-6dd1-4c68-a054-29ee3a477e26",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Create song",
+            "url": "http://127.0.0.1:8000/api/songs",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-10T10:40:37.424Z",
+            "modified": "2024-05-10T10:44:31.962Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"TITLE\": \"Rape me\",\n      \"ARTIST_ID\": \"39\",\n      \"TIME\": \"3:43\",\n      \"BPM\": \"134,7\",\n      \"YEAR\": 1985,\n      \"GENRE\": \"Rock 1980s\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "db37f4ad-d025-485d-8415-c9c62b36baac",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Get one",
+            "url": "http://127.0.0.1:8000/api/artists/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-10T13:47:43.923Z",
+            "modified": "2024-05-10T13:48:06.973Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "b091f8c7-fb7f-4ad1-a44c-0a190bcd1d9d",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Get one",
+            "url": "http://127.0.0.1:8000/api/songs/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-10T11:00:36.921Z",
+            "modified": "2024-05-10T11:00:52.945Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "354c20f8-e4c7-4fb5-ad47-71dbb6031a3e",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Delete artist",
+            "url": "http://127.0.0.1:8000/api/artists/68",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-05-10T19:37:09.344Z",
+            "modified": "2024-05-10T20:20:05.614Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "eed4fdb1-e027-427b-bd11-5fad20d5cbf2",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Update song",
+            "url": "http://127.0.0.1:8000/api/songs/3",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-05-10T11:01:19.856Z",
+            "modified": "2024-05-10T11:04:55.564Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"TITLE\": \"Stairway to Heaven\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d63ce701-6ee8-403c-be26-b8fb6cbcffb3",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Update artist",
+            "url": "http://127.0.0.1:8000/api/artists/67",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-05-10T20:15:18.628Z",
+            "modified": "2024-05-10T20:23:41.719Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"artist\": \"Dio\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ac487551-b29b-4c89-8f49-feed7b8ee284",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "7e88330a-7087-4d1b-b7c1-48d8dddae82c",
+            "name": "Delete song",
+            "url": "http://127.0.0.1:8000/api/songs/101",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-05-10T10:52:56.110Z",
+            "modified": "2024-05-10T10:53:19.814Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "b6ecf214-25bf-42c9-bb9e-49b4cd4be240",
+            "colId": "69ff39d6-5743-4e7f-8bd0-9e09994d521b",
+            "containerId": "94a0967c-479d-4ace-a00b-17fcb73502ad",
+            "name": "Create artist",
+            "url": "http://127.0.0.1:8000/api/artists",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-10T20:15:16.326Z",
+            "modified": "2024-05-10T20:16:35.815Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"artist\": \"Ronnie James\",\n    \"fame\": \"0,97\",\n    \"popularity\": \"0,97\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "0e9sZ3DdnwVExSMSHXJlNRUK7c0_1371GZmCdYItEpizdYp4w8lsouyCkcXRMk-6PKBpjyG6REloSSklll5_3A"
+}
