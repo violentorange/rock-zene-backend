@@ -15,6 +15,7 @@ class Song extends Model
         'TITLE',
         'ARTIST_ID',
         'TIME',
+        'BPM',
         'YEAR',
         'GENRE',
     ];
