@@ -23,8 +23,20 @@ class SongController extends Controller
      */
     public function store(StoreSongRequest $request)
     {
-        $song = Song::create($request->all());
-        return new SongResource($song);
+
+        {
+            if ($request->hasFile('image')) {
+                $image_url = $request->file('image')->store('images', 'public');
+                $request->merge(['image_url' => $image_url]);
+            }
+
+            $song = Song::create($request->all());
+
+            return response()->json([
+               'message' => 'Song created successfully',
+                'data' => $song,
+            ], 201);
+        }
     }
 
     /**

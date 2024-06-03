@@ -10,4 +10,12 @@ class ShoppingCart extends Model
     use HasFactory;
 
     public $timestamps = false;
+
+    protected $fillable = [
+        'user_id',
+       'song_id',
+        'quantity',
+    ];
+
+
 }

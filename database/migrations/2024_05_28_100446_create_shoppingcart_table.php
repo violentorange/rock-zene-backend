@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('shoppingcart', function (Blueprint $table) {
             $table->id();
-            $table->string('song_id');
+            $table->bigInteger('song_id');
+            $table->bigInteger('user_id')->unsigned();
             $table->string('quantity');
+            $table->foreign('song_id')->references('id')->on('songs');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

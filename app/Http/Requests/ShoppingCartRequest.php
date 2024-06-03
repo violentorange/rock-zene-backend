@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreSongRequest extends FormRequest
+class ShoppingCartRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,13 +22,7 @@ class StoreSongRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'TITLE' => ['required','string','max:1024'],
-            'ARTIST_ID' => ['required','string','max:1024'],
-            'TIME' => ['required','string','max:1024'],
-            'YEAR' => ['required','integer'],
-            'BPM' => ['required','integer'],
-            'GENRE' => ['required','string','max:1024'],
-            'IMAGEURL' => ['image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048' ],
+            //
         ];
     }
 }

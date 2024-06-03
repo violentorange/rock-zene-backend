@@ -18,5 +18,6 @@ class Song extends Model
         'BPM',
         'YEAR',
         'GENRE',
+        'IMAGEURL',
     ];
 }
