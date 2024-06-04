@@ -27,9 +27,9 @@ class SongController extends Controller
         {
             if ($request->hasFile('image')) {
                 $image_url = $request->file('image')->store('images', 'public');
-                $request->merge(['image_url' => $image_url]);
+                $request->merge(['IMAGEURL' => $image_url]);
             }
-
+            // return $request->all();
             $song = Song::create($request->all());
 
             return response()->json([
