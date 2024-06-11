@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ShoppingCartRequest;
+use App\Http\Resources\ShoppingCartResource;
 use App\Models\ShoppingCart;
 use Illuminate\Http\Request;
 
@@ -12,7 +14,7 @@ class ShoppingCartController extends Controller
      */
     public function index()
     {
-        //
+        return ShoppingCartResource::collection(ShoppingCart::all());
     }
 
     /**
@@ -20,7 +22,8 @@ class ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $shoppingCart = ShoppingCart::create($request->all());
+        return new ShoppingCartResource($shoppingCart);
     }
 
     /**
@@ -28,7 +31,7 @@ class ShoppingCartController extends Controller
      */
     public function show(ShoppingCart $shoppingCart)
     {
-        //
+        return new ShoppingCartResource($shoppingCart);
     }
 
     /**
@@ -36,7 +39,8 @@ class ShoppingCartController extends Controller
      */
     public function update(Request $request, ShoppingCart $shoppingCart)
     {
-        //
+        $shoppingCart->update($request->all());
+        return new ShoppingCartResource($shoppingCart);
     }
 
     /**
