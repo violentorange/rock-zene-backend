@@ -22,7 +22,9 @@ class ShoppingCartRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'song_id' => ['required', 'integer'],
+            'quantity' => ['required', 'integer'],
+            'user_id' => ['required', 'integer'],
         ];
     }
 }
