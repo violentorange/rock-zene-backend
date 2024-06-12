@@ -14,7 +14,10 @@ class ShoppingCart extends Model
     protected $fillable = [
         'user_id',
        'song_id',
+       'songtitle',
+       'songprice',
         'quantity',
+        'imageurl',
     ];
 
 
