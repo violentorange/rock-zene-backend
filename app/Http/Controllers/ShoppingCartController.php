@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ShoppingCartRequest;
 use App\Http\Resources\ShoppingCartResource;
 use App\Models\ShoppingCart;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ShoppingCartController extends Controller
@@ -49,5 +50,10 @@ class ShoppingCartController extends Controller
     public function destroy(ShoppingCart $shoppingCart)
     {
         //
+    }
+
+    public function itemsOfUser(User $user)
+    {
+        return ShoppingCartResource::collection($user->shoppingcart);
     }
 }

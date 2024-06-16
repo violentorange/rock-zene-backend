@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\SongController;
 use Illuminate\Http\Request;
@@ -28,3 +29,9 @@ Route::apiResource('artists', ArtistController::class);
 Route::apiResource('shoppingcart', ShoppingCartController::class);
 
 Route::post('/songs', [SongController::class,'store']);
+
+Route::post('register', [AuthController::class,'register']);
+Route::post('login', [AuthController::class,'login']);
+Route::post('logout', [AuthController::class,'logout']);
+
+Route::get('/users/{user}/shoppingcart', [AuthController::class,'itemsOfUser']);
