@@ -22,12 +22,4 @@ class AuthController extends Controller
             'token' => $token,
         ], 201);
     }
-
-    public function login(Request $request){
-        return true;
-    }
-
-    public function logout(){
-        return true;
-    }
 }
