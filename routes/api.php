@@ -23,6 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout']);
+});
+
 Route::apiResource('songs', SongController::class);
 
 Route::apiResource('artists', ArtistController::class);
@@ -33,6 +37,6 @@ Route::post('/songs', [SongController::class,'store']);
 
 Route::post('/register', [AuthController::class,'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout']);
+
 
 Route::get('/users/{user}/shoppingcart', [AuthController::class,'itemsOfUser']);
