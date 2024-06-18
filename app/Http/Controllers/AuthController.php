@@ -50,4 +50,11 @@ class AuthController extends Controller
         ]);
     }
 
+    public function itemsOfUser(User $user)
+    {
+        return response()->json([
+            'items' => $user->cartitems
+        ]);
+    }
+
 }
