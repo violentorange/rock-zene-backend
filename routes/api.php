@@ -32,6 +32,7 @@ Route::apiResource('shoppingcart', ShoppingCartController::class);
 Route::post('/songs', [SongController::class,'store']);
 
 Route::post('/register', [AuthController::class,'register']);
-Route::post('/login', [LoginController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout']);
 
 Route::get('/users/{user}/shoppingcart', [AuthController::class,'itemsOfUser']);
