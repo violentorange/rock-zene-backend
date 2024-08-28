@@ -49,7 +49,8 @@ class ShoppingCartController extends Controller
      */
     public function destroy(ShoppingCart $shoppingCart)
     {
-        //
+        $shoppingCart->delete(all());
+        return response()->noContent();
     }
 
     public function itemsOfUser(User $user)
